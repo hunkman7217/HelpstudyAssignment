@@ -16,7 +16,7 @@ export default function UserDetails() {
   return (
     <Box p={5}>
       <button
-        onClick={() => router.push("/user/User")}
+        onClick={() => router.push("/users/User")}
         className="mb-4 underline"
       >
         ← Back
