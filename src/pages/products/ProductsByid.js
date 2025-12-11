@@ -16,7 +16,7 @@ export default function ProductDetails() {
   return (
     <Box p={5}>
       <button
-        onClick={() => router.push("/ProductsByid")}
+        onClick={() => router.push("products/ProductsByid")}
         className="underline mb-4"
       >
         ← Back
