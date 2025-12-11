@@ -1,40 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ** HelpstudyAssignment
 
-## Getting Started
+A modern admin dashboard built using Next.js, Material UI, TailwindCSS, and Zustand for state management.The project fetches live data from DummyJSON API and provides full features like authentication, user list, product list, search, pagination, product details, and user details.
 
-First, run the development server:
+# ** Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# * Authentication
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ - Simple login screen
+ - Auth state managed via Zustand
+ - Logout functionality with global reset
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+ # * Users Module
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+ - Fetch all users
+ - Search users
+ - Pagination
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+# * Products Module
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  - Fetch all products
+  - View product details
+  - Category filter (limited API support)
 
-## Learn More
+  # * UI/UX
 
-To learn more about Next.js, take a look at the following resources:
+   - Beautiful combination of Material UI + TailwindCSS
+   - Responsive design
+   - Skeleton & Loading states
+   - Clean navigation with Navbar
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+  # ** Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ /src
+ ├── components/         # Navbar, UI components
+ ├── pages/              # All route pages
+ │    ├── login/
+ │    ├── users/
+ │    ├── products/
+ ├── store/              # Zustand stores
+ ├── styles/             # Tailwind & globals
+ └── utils/              # API functions
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   # ** Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+   - Next.js -	Frontend Framework
+   - Material UI -	Components & UI
+   - TailwindCSS -	Utility styling
+   - Zustand -	Global state management
+   - DummyJSON API -	Backend data
+   - Axios / Fetch -	API calling
+
+  # ** API Sources (DummyJSON)
+
+   - This project uses:
+
+   - https://dummyjson.com/users
+   - https://dummyjson.com/products
+   - https://dummyjson.com/products/:id
+   - https://dummyjson.com/users/:id
