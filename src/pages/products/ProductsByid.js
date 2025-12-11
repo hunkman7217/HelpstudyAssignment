@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { useProductsStore } from "@/store/ProductStore";
+import  useProductsStore  from "@/store/ProductStore";
 import { Box } from "@mui/material";
 
 export default function ProductDetails() {
