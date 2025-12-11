@@ -25,8 +25,8 @@ export default function Login() {
 
   return (
     <>
-      <div className="mt-35 p-20 justify-center justify-self-center bg-white w-100 rounded-bl-4xl rounded-tr-4xl">
-        <h1 className="text-4xl text-black text-center mb-5">Log in</h1>
+      <div className="mt-35 p-20 justify-center justify-self-center bg-white w-100 rounded-b-full rounded-tl-full">
+        <h1 className="text-4xl text-black text-center mb-3">Log in</h1>
 
         <form className="flex flex-col text-center" onSubmit={handleLogin}>
           {/* EMAIL INPUT */}
